@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+    background-color: gray;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.header a {
+    color: black;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo {
+    /* max-width: 260px; */
+}
+.logo__nav {
+    display: flex;
+    align-items: center;
+}
+.logo__text {
+}
+.navbar {
+    font-size: 20px;
+}
+.nav__link {
+    display: inline-block;
+    margin: 0 10px;
+    transition: color 0.2s linear;
+}
+.header__btn {
+    /* display: flex;
+    justify-content: flex-end;
+    width: 260px; */
+    padding: 0 50px;
+}
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: white;
+    opacity: 0;
+
+    transition: opacity 0.2s linear;
+}
+.nav__link:hover {
+    color: white;
+}
+.nav__link:hover::after {
+    opacity: 1;
+}
+.header__btn {
+    display: flex;
+}
+.btn {
+    display: flex;
+}
+.btn__darkmode {
+    width: 30px;
+    height: 20px;
+    border-radius: 20px;
+}
+.header.darkmode {
+    background-color: #191729;
+}
+.header.darkmode a {
+    color: white;
+}
+body.darkmode {
+    color: white;
+    background-color: #14131D;
+}
+body.darkmode a {
+    color: white;
+}
+/* .darkmode .btn{
+    box-shadow: inset 0 8px 60px rgba(0,0,0, .3),
+                inset 8px 0 8px rgba(0,0,0, .3),
+                inset 0 -4px 4px rgba(0,0,0, .3);
+} */
+.darkmode .btn__indicator {
+    transform: translateX(10px);
+    background-color: #191729;
+    box-shadow: 0 8px 40px rgba(0,0,0, .3);
+}
+.darkmode .btn__darkmode {
+    border-color: white;
+    background-color: #191729;
+}
+
+
+/* MAIN */
+.main a {
+    color: black;
+}
+.popular {
+    display: flex;
+    flex-direction: column;
+}
+.popular__categorie {
+    text-align: center;
+    margin: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.popular__inner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+.popular__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+.popular__link img {
+    width: 100px;
+    height: 150px;
+}
+
+/* ANIME PAGE */
+.about__anime {
+    font-size: 20px;
+    max-width: 1200px;
+    max-height: 2500px;
+    margin: 0 auto;
+}
+.about__info img {
+    width: 200px;
+    height: 250px;
+}
+.about__info {
+    display: flex;
+}
+.about__img {
+    width: 200px;
+    height: 250px;
+}
+.about__img__bleach:hover img {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.about__img__bleach:hover {
+    background-image: url('../img/gif/bleach.gif');
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about__img__bluelock:hover img {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.about__img__bluelock:hover {
+    background-image: url('../img/gif/bluelock.gif');
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about__img__chainsaw_man:hover img {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.about__img__chainsaw_man:hover {
+    background-image: url('../img/gif/chainsaw_man.gif');
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about__img__one_piece:hover img {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.about__img__one_piece:hover {
+    background-image: url('../img/gif/one_piece.gif');
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about__img__tokyo_ghoul:hover img {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.about__img__tokyo_ghoul:hover {
+    background-image: url('../img/gif/tokyo_ghoul.gif');
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about__img__hunterxhunter:hover img {
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.about__img__hunterxhunter:hover {
+    background-image: url('../img/gif/hunterxhunter.gif');
+    width: 200px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about__title {
+    margin: 0 20px;
+}
+.about__information {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.about__description {
+    max-width: 625px;
+    max-height: 235px;
+}
+a {
+    text-decoration: none;
+}
